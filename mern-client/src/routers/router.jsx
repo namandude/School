@@ -13,6 +13,7 @@ import Dashboard from "../dashboard/Dashboard";
 import UploadBook from "../dashboard/UploadBook";
 import ManageBooks from "../dashboard/ManageBooks";
 import EditBooks from "../dashboard/EditBooks";
+import Singup from "../components/Singup";
   
   const router = createBrowserRouter([
     {
@@ -68,6 +69,10 @@ import EditBooks from "../dashboard/EditBooks";
 
         }
       ]
+    },
+    {
+      path:"sign-up",
+      element:<Singup/>
     }
   ]);
 
