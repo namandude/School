@@ -5,7 +5,7 @@ import { AuthContext } from '../contacts/AuthProviders';
  // Update this path
 
 const PrivateRoute = ({ children }) => {
-    const { user, loading } = useContext(AuthContext);
+    const { user, loading} = useContext(AuthContext);
     const location = useLocation();
 
     if (loading) {
@@ -20,7 +20,10 @@ const PrivateRoute = ({ children }) => {
         return children;
     }
 
-    return <Navigate to="/login"  state={{}}/>;
-};
+    return(
+        <Navigate to="/login" state={{from: location}} replace></Navigate>
+    )
+    
+    }
 
 export default PrivateRoute;

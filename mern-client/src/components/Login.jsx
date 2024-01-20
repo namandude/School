@@ -4,7 +4,7 @@ import { AuthContext } from '../contacts/AuthProviders';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
-    const { loginUser, loginWithGoogle } = useContext(AuthContext);
+    const { login, loginWithGoogle } = useContext(AuthContext);
     const [error, setError] = useState('');
 
     const location = useLocation();
@@ -17,8 +17,9 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
+        
 
-        loginUser(email, password)
+        login(email, password)
             .then(() => {
                 // Logged in successfully
                 alert("Login Successful");

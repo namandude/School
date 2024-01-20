@@ -17,6 +17,7 @@ import Singup from "../components/Singup";
 import login from "../components/login";
 import PrivateRoute from "../Privateroute/PrivateRoute";
 import Login from "../components/login";
+import Logout from "../components/Logout";
   
   const router = createBrowserRouter([
     {
@@ -50,7 +51,7 @@ import Login from "../components/login";
       children:[
         {
           path: "/admin/dashboard",
-          element:<Dashboard/>
+          element:<PrivateRoute><Dashboard/></PrivateRoute>
 
         },
         {
@@ -80,6 +81,10 @@ import Login from "../components/login";
     {
       path:"/login",
       element: <Login/>
+    },
+    {
+      path:"/logout",
+      element: <Logout/>
     }
   ]);
 
