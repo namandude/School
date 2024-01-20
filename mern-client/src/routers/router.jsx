@@ -14,6 +14,9 @@ import UploadBook from "../dashboard/UploadBook";
 import ManageBooks from "../dashboard/ManageBooks";
 import EditBooks from "../dashboard/EditBooks";
 import Singup from "../components/Singup";
+import login from "../components/login";
+import PrivateRoute from "../Privateroute/PrivateRoute";
+import Login from "../components/login";
   
   const router = createBrowserRouter([
     {
@@ -73,6 +76,10 @@ import Singup from "../components/Singup";
     {
       path:"sign-up",
       element:<Singup/>
+    },
+    {
+      path:"/login",
+      element: <Login/>
     }
   ]);
 
