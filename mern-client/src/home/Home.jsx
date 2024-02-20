@@ -1,20 +1,24 @@
 import React from 'react'
 import Banner from '../components/Banner';
-import BestSellerBooks from './Bestsellerbooks';
+import BestSellerBooks from './Admission';
 import FavBooks from './FavBooks';
-import PromoBanner from './PromoBanner';
-import OtherBooks from './OtherBooks';
+import Notice from './Notice';
+import PromoBanner from './HomeAbt';
+import Gallery from './Gallery';
 import Reviews from './Reviews';
 import MyFooter from '../components/MyFooter';
+import HomeAbt from './HomeAbt';
+import Admisson from './Admission';
 
 const Home = () => {
   return (
     <div>
      <Banner/>
-     <BestSellerBooks/>
-     <FavBooks/>
-     <PromoBanner/>
-     <OtherBooks/>
+     <Notice></Notice>
+     <HomeAbt/>
+     <Admisson/>
+     {/* <FavBooks/> */}
+     <Gallery/>
      <Reviews/>
     </div>
   )

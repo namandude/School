@@ -14,27 +14,27 @@
   }
   
   .banner .swiper-slide:nth-child(1n) {
-    background-image: url('src/assets/bannerimages/image1.jpeg')
+    background-image: url('https://i.pinimg.com/236x/ae/e6/44/aee644715e4b44adfb85446b4aeeb1c7.jpg')
   }
   
   .banner .swiper-slide:nth-child(2n) {
-    background-image: url('src/assets/bannerimages/image2.jpeg')
+    background-image: url('https://i.pinimg.com/236x/00/38/c9/0038c99663c82949dc4285389369f4c6.jpg')
   }
   
   .banner .swiper-slide:nth-child(3n) {
-    background-image: url('src/assets/bannerimages/image3.jpeg')
+    background-image: url('https://i.pinimg.com/236x/94/22/96/94229648ef42315301b7c6f0b6c140ab.jpg')
   }
   
   .banner .swiper-slide:nth-child(4n) {
-    background-image: url('src/assets/bannerimages/image4.jpeg')
+    background-image: url('https://i.pinimg.com/236x/55/b5/2f/55b52fc095848d2316386dbab0c1ff84.jpg')
   }
   
   .banner .swiper-slide:nth-child(5n) {
-    background-image: url('src/assets/bannerimages/image5.jpeg')
+    background-image: url('https://i.pinimg.com/236x/ee/b7/c0/eeb7c0e36c6b7916277145b76423473d.jpg')
   }
   
   .banner .swiper-slide:nth-child(6n) {
-    background-image: url('src/assets/bannerimages/image6.jpeg')
+    background-image: url('https://i.pinimg.com/236x/9f/09/0a/9f090a1718b1bada5821c72ff233d09b.jpg')
   }
   
   

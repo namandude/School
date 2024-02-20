@@ -1,0 +1,105 @@
+/* 
+
+
+.faculty .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+  gap: 0.5rem;
+}
+
+.faculty .box-container .box{
+  position: relative;
+  width: 25rem;
+  border-radius: .5rem;
+  height: 15rem;
+  cursor: pointer;
+
+   overflow:hidden;
+
+}
+
+
+.faculty .box-container .box img{
+  height: 100%;
+ 
+  width: 60%;
+  object-fit: cover;
+}
+
+
+.faculty .box-container .box:hover img{
+  transform: scale(1.1);
+  
+}
+
+
+.faculty .box-container .box .title{
+  position: absolute;
+  top:-10rem;left: 0; right:0;
+  background:#076d8f;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 1rem;
+ 
+}
+.faculty .box-container .box .title  h1{
+
+  font-size:2rem;
+}
+
+
+.faculty .box-container .box:hover .title{
+  top:0;
+}
+
+
+
+*/
+.faculty .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.5rem;
+  justify-items: center; /* Align grid items horizontally to the center */
+  align-items: center; /* Align grid items vertically to the center */
+}
+
+.faculty .box-container .box {
+  position: relative;
+  width: 15rem;
+  border-radius: 0.5rem;
+  height: 15rem;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex; /* Use flexbox for centering the image */
+  justify-content: center; /* Align content horizontally to the center */
+  align-items: center; /* Align content vertically to the center */
+}
+
+.faculty .box-container .box img {
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  max-height: 100%; /* Ensure the image does not exceed the container height */
+  object-fit: contain; /* Maintain the aspect ratio of the image while fitting it inside the container */
+}
+
+.faculty .box-container .box:hover img {
+  transform: scale(1.1);
+}
+
+.faculty .box-container .box .title {
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  right: 0;
+  background: #076d8f;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.faculty .box-container .box .title h1 {
+  font-size: 2rem;
+}
+
+.faculty .box-container .box:hover .title {
+  top: 0;
+}
