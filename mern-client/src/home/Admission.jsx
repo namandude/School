@@ -44,7 +44,7 @@ const Admission = () => {
           SHRI KRISHNA <span className='text-blue-700'>INTERNATIONAL SCHOOL </span>
         </h2>
         <p className='mb-10 text-lg md:w-5/6'>
-        Shri Krishna International School has a student-centered system of core values, which aligns with your values, always presenting a positive, pro-active, and caring approach.
+        Shri Krishna International School has a student-centered system of core values, which aligns with your values, always presenting a positive, pro-active, and caring approach..
 
 
         </p>
