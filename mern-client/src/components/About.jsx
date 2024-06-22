@@ -1,9 +1,14 @@
 import React from 'react'
+import AboutBanner from '../About/aboutbanner'
+import Team from '../About/tean'
+
 
 const About = () => {
   return (
     <div>
-      About
+      <Team/>
+    <AboutBanner/>
+    
     </div>
   )
 }
