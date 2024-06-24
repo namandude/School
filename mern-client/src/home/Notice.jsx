@@ -38,13 +38,13 @@ const AllNotices = () => {
             <div className='scrolling-container'>
               <ul className='latest-news-ul'>
                 {news.map(newsItem => (
-                  <Link to={`/news/${newsItem._id}`} key={newsItem._id}>
-                    <li className="mb-2">
+                  <li key={newsItem._id} className="mb-2">
+                    <Link to={`/news/${newsItem._id}`}>
                       <div className="latest-details">
                         <p>{newsItem.NewsDescription} <span><FcApproval /></span></p>
                       </div>
-                    </li>
-                  </Link>
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -60,13 +60,13 @@ const AllNotices = () => {
             <div className='scrolling-container'>
               <ul className='upcoming-event-list'>
                 {events.map(event => (
-                  <Link to={`/event/${event._id}`} key={event._id}>
-                    <li className="mb-2">
+                  <li key={event._id} className="mb-2">
+                    <Link to={`/event/${event._id}`}>
                       <div className="event-details">
                         <p><span>{event.EventDate}</span>: {event.EventTitle} : {event.EventDescription}</p>
                       </div>
-                    </li>
-                  </Link>
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -82,13 +82,13 @@ const AllNotices = () => {
             <div className='scrolling-container'>
               <ul className='upcoming-notice'>
                 {notices.map(notice => (
-                  <Link to={`/notice/${notice._id}`} key={notice._id}>
-                    <li className="mb-2">
+                  <li key={notice._id} className="mb-2">
+                    <a href={notice.noticeUrl} target="_blank" rel="noopener noreferrer">
                       <div className="notice-details">
                         <p><span><FaRegFilePdf className="file-icon" /></span> {notice.uploadDate} : {notice.noticeTitle}</p>
                       </div>
-                    </li>
-                  </Link>
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>
