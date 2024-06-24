@@ -2,28 +2,28 @@ import React, { useContext } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 import { Spinner } from 'flowbite-react';
 import { AuthContext } from '../contacts/AuthProviders';
- // Update this path
 
 const PrivateRoute = ({ children }) => {
-    const { user, loading} = useContext(AuthContext);
-    const location = useLocation();
+  const { user, loading } = useContext(AuthContext);
+  const location = useLocation();
 
-    if (loading) {
-        return (
-            <div className="text-center">
-                <Spinner aria-label="center-aligned spinner example" />
-            </div>
-        );
-    }
+  console.log('Loading:', loading, 'User:', user); // Debug line
 
-    if (user) {
-        return children;
-    }
+  if (loading) {
+    return (
+      <div className="text-center">
+        <Spinner aria-label="center-aligned spinner example" />
+      </div>
+    );
+  }
 
-    return(
-        <Navigate to="/login" state={{from: location}} replace></Navigate>
-    )
-    
-    }
+  if (!user) {
+    return (
+      <Navigate to="/login" state={{ from: location }} replace />
+    );
+  }
+
+  return children;
+};
 
 export default PrivateRoute;
