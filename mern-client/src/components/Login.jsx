@@ -67,7 +67,7 @@ const Login = () => {
                                     <input autoComplete="off" id="password" name="password" placeholder="Password" type="password" className="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-rose-600" />
                                 </div>
                                 {error && <p className="text-red-500">{error}</p>}
-                                <p> If you don't have an account. Please <Link to="/sign-up" className='text-blue-600 underline'>Sign Up</Link> Here</p>
+                                
                                 <div className="relative">
                                     <button type='submit' className="bg-blue-500 text-white rounded-md px-2 py-1">Login</button>
                                 </div>
@@ -75,12 +75,12 @@ const Login = () => {
                         </div>
 
                         <hr />
-                        <div className="flex w-full items-center flex-col mt-5 gap-3">
+                        {/* <div className="flex w-full items-center flex-col mt-5 gap-3">
                             <button onClick={handleLoginWithGoogle} className="bg-blue-500 text-white rounded-md px-2 py-1">
                                 Login with Google
                             </button>
 
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -31,7 +31,8 @@ const Admission = () => {
   return (
         
 <section class="weare" id="weare">
-{/* <h2 className='text-3xl font-bold text-center mb-10 leading-snug'> Setting a benchmark in child-friendly education</h2> */}
+  <br/>
+
 <h2 className='text-5xl font-bold text-center mb-10 leading-snug ml-20'>Admissions</h2>
 
     <div className='px-4 lg:px-24 my-20 flex flex-col md:flex-row justify-between items-center gap-12'>
